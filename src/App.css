@@ -38,13 +38,14 @@
   float: left;
   position: absolute;
   top: 50%;
-  left: 30%;
+  left: 50%;
+  transform: translate(-50%);
   text-align: center;
   z-index: 99999;
 }
 
 #board {
-  background-image: url('./assets/cemetery_animationcycled.gif');
+  /*background-image: url('./assets/cemetery_animationcycled.gif');*/
   background-size: cover;
   grid-area: board;
 }
@@ -58,6 +59,18 @@
   width: 50px;
   position: relative;
   transition: all 1s ease-out;
+  cursor: crosshair;
+}
+
+#crosshair {
+  font-size: 60px;
+  color: white;
+  grid-area: board;
+  z-index: 99999;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  /*transition: all 1s ease-out;*/
   cursor: crosshair;
 }
 
